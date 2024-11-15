@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Lufthansa">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="Marc">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Livio">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Jan">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Gabriel">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Livio2">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Marc2">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="OKR-Manager">
+      <displayName>OKR-Manager</displayName>
+    </role>
+    <role name="OKR-Member">
+      <displayName>OKR-Member</displayName>
+    </role>
+    <role name="Vorgesetzte">
+      <displayName>Vorgesetzte</displayName>
+    </role>
+    <role name="Leadership Manager">
+      <displayName>Leadership Manager</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Leadership Management">
+      <displayName>Leadership Management</displayName>
+    </group>
+    <group name="OKR Team 1">
+      <displayName>OKR Team 1</displayName>
+    </group>
+    <group name="OKR Team 2">
+      <displayName>OKR Team 2</displayName>
+    </group>
+    <group name="Vorgesetzte">
+      <displayName>Vorgesetzte</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>Marc</userName>
+      <roleName>OKR-Member</roleName>
+      <groupName>OKR Team 1</groupName>
+    </membership>
+    <membership>
+      <userName>Livio</userName>
+      <roleName>OKR-Manager</roleName>
+      <groupName>OKR Team 1</groupName>
+    </membership>
+    <membership>
+      <userName>Jan</userName>
+      <roleName>Leadership Manager</roleName>
+      <groupName>Leadership Management</groupName>
+    </membership>
+    <membership>
+      <userName>Gabriel</userName>
+      <roleName>Vorgesetzte</roleName>
+      <groupName>Vorgesetzte</groupName>
+    </membership>
+    <membership>
+      <userName>Livio2</userName>
+      <roleName>OKR-Manager</roleName>
+      <groupName>OKR Team 2</groupName>
+    </membership>
+    <membership>
+      <userName>Marc2</userName>
+      <roleName>OKR-Member</roleName>
+      <groupName>OKR Team 2</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>

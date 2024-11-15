@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+  <process:MainProcess xmi:id="_u2NVUKHVEe-DVtPZkrI92A" name="OKR-Prozess" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_u2NVUaHVEe-DVtPZkrI92A" name="Process Engine">
+      <elements xmi:type="process:Lane" xmi:id="_u2NVUqHVEe-DVtPZkrI92A" name="Automatisch">
+        <elements xmi:type="process:StartEvent" xmi:id="_bcpFUKHlEe-kwcC__k1zcw" name="Start1" outgoing="_YDneEKMkEe-8Qpla3XXRlg">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_bcpFUqHlEe-kwcC__k1zcw" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_bcpFUaHlEe-kwcC__k1zcw" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_bcpFU6HlEe-kwcC__k1zcw" name="" content="" returnTypeFixed="true"/>
+        </elements>
+      </elements>
+      <elements xmi:type="process:Lane" xmi:id="_cky8gKMfEe-8Qpla3XXRlg" name="Team-Member" actor="_-f5wkKHhEe-kwcC__k1zcw"/>
+      <elements xmi:type="process:Lane" xmi:id="_h_5TwKHhEe-kwcC__k1zcw" name="OKR-Manager" actor="_79MjQKHhEe-kwcC__k1zcw">
+        <elements xmi:type="process:EndEvent" xmi:id="_NW9rcKHiEe-kwcC__k1zcw" name="End1" incoming="_oe3ukKMvEe-8Qpla3XXRlg">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_NW9rcqHiEe-kwcC__k1zcw" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_NW9rcaHiEe-kwcC__k1zcw" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_NW9rc6HiEe-kwcC__k1zcw" name="" content="" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:XORGateway" xmi:id="_yt7dMKMnEe-8Qpla3XXRlg" name="a" outgoing="_hjydsKMtEe-8Qpla3XXRlg" incoming="_YDneEKMkEe-8Qpla3XXRlg _YzH2IKMpEe-8Qpla3XXRlg">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_yt7dMqMnEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_yt7dMaMnEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_yt7dM6MnEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:XORGateway" xmi:id="_T-ELsKMpEe-8Qpla3XXRlg" documentation="OKRs von anderen Teams verfügbar?" name="OKRs von anderen Teams verfügbar?" outgoing="_YzH2IKMpEe-8Qpla3XXRlg _MuX4kKMuEe-8Qpla3XXRlg" incoming="_h0t1oKMtEe-8Qpla3XXRlg">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_xQTooqMnEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_xQTooaMnEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_xQToo6MnEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:Task" xmi:id="_iYOLUKMtEe-8Qpla3XXRlg" name="Input-Output-Outcome Tabelle ausfüllen" outgoing="_h0t1oKMtEe-8Qpla3XXRlg" incoming="_hjydsKMtEe-8Qpla3XXRlg" overrideActorsOfTheLane="false">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_gPlq4qMtEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_gPlq4aMtEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_gPlq46MtEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_p8miy6MtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_p8mizKMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p8mizaMtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_p8mizqMtEe-8Qpla3XXRlg" name="okrCycleInput.unternehmensziele" content="okrCycleInput?.unternehmensziele" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_p8miz6MtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_p8mi0KMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setUnternehmensziele">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_p8mi0aMtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_p8mi0qMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p8mi06MtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_p8mi1KMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_input" content="okrCycleInput?.okr_1_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_p8mi1aMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_p8mi1qMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_p8mi16MtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_p8mi2KMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p8mi2aMtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_p8mi2qMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_output" content="okrCycleInput?.okr_1_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_p8mi26MtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_p8mi3KMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_p8mi3aMtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_p8mi3qMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p8mi36MtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_p8mi4KMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_outcome" content="okrCycleInput?.okr_1_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_p8mi4aMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_p8mi4qMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_p8mi46MtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_p8mi5KMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p8mi5aMtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_p8mi5qMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_input" content="okrCycleInput?.okr_2_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_p8mi56MtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_p8mi6KMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_p8mi6aMtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_p8mi6qMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p8mi66MtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_p8mi7KMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_output" content="okrCycleInput?.okr_2_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_p8mi7aMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_p8mi7qMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_p8mi76MtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_p8mi8KMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p8mi8aMtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_p8mi8qMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_outcome" content="okrCycleInput?.okr_2_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_p8mi86MtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_p8mi9KMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_p8mi9aMtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_p8mi9qMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p8mi96MtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_p8mi-KMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_input" content="okrCycleInput?.okr_3_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_p8mi-aMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_p8mi-qMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_p8mi-6MtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_p8mi_KMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p8mi_aMtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_p8mi_qMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_output" content="okrCycleInput?.okr_3_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_p8mi_6MtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_p8mjAKMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_p8mjAaMtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_p8mjAqMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_p8mjA6MtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_p8mjBKMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_outcome" content="okrCycleInput?.okr_3_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_p8mjBaMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_p8mjBqMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <loopCondition xmi:type="expression:Expression" xmi:id="_gPlq5KMtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <loopMaximum xmi:type="expression:Expression" xmi:id="_gPlq5aMtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_gPlq5qMtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_gPlq6KMtEe-8Qpla3XXRlg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_gPlq56MtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <formMapping xmi:type="process:FormMapping" xmi:id="_iYOLWqMtEe-8Qpla3XXRlg">
+            <targetForm xmi:type="expression:Expression" xmi:id="_iYOLW6MtEe-8Qpla3XXRlg" name="inputOutputOutcomeForm" content="91c3c213-7951-4959-ae2a-457868e28195" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          </formMapping>
+          <contract xmi:type="process:Contract" xmi:id="_iYOLWaMtEe-8Qpla3XXRlg">
+            <inputs xmi:type="process:ContractInput" xmi:id="_p8miwKMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" dataReference="okrCycle">
+              <inputs xmi:type="process:ContractInput" xmi:id="_p8miwaMtEe-8Qpla3XXRlg" name="unternehmensziele"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_p8miwqMtEe-8Qpla3XXRlg" name="okr_1_input"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_p8miw6MtEe-8Qpla3XXRlg" name="okr_1_output"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_p8mixKMtEe-8Qpla3XXRlg" name="okr_1_outcome"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_p8mixaMtEe-8Qpla3XXRlg" name="okr_2_input"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_p8mixqMtEe-8Qpla3XXRlg" name="okr_2_output"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_p8mix6MtEe-8Qpla3XXRlg" name="okr_2_outcome"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_p8miyKMtEe-8Qpla3XXRlg" name="okr_3_input"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_p8miyaMtEe-8Qpla3XXRlg" name="okr_3_output"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_p8miyqMtEe-8Qpla3XXRlg" name="okr_3_outcome"/>
+            </inputs>
+          </contract>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_iYOLXKMtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:Task" xmi:id="_073FoKMtEe-8Qpla3XXRlg" name="Teamübergreifendes Alignement durchführen" outgoing="_HulvYKMvEe-8Qpla3XXRlg" incoming="_MuX4kKMuEe-8Qpla3XXRlg" overrideActorsOfTheLane="false">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_073FoqMtEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_073FoaMtEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_073Fo6MtEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_6s86i6MtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_6s86jKMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6s86jaMtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_6s86jqMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_input" content="okrCycleInput?.okr_1_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6s86j6MtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_6s86kKMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_6s86kaMtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_6s86kqMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6s86k6MtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_6s86lKMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_output" content="okrCycleInput?.okr_1_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6s86laMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_6s86lqMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_6s86l6MtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_6s86mKMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6s86maMtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_6s86mqMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_outcome" content="okrCycleInput?.okr_1_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6s86m6MtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_6s86nKMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_6s86naMtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_6s86nqMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6s86n6MtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_6s86oKMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_input" content="okrCycleInput?.okr_2_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6s86oaMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_6s86oqMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_6s86o6MtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_6s86pKMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6s86paMtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_6s86pqMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_output" content="okrCycleInput?.okr_2_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6s86p6MtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_6s86qKMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_6s86qaMtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_6s86qqMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6s86q6MtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_6s86rKMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_outcome" content="okrCycleInput?.okr_2_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6s86raMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_6s86rqMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_6s86r6MtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_6s86sKMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6s86saMtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_6s86sqMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_input" content="okrCycleInput?.okr_3_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6s86s6MtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_6s86tKMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_6s86taMtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_6s86tqMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6s86t6MtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_6s86uKMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_output" content="okrCycleInput?.okr_3_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6s86uaMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_6s86uqMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_6s86u6MtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_6s86vKMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6s86vaMtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_6s86vqMtEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_outcome" content="okrCycleInput?.okr_3_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6s86v6MtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_6s86wKMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_6s86waMtEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_6s86wqMtEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6s86w6MtEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_6s86xKMtEe-8Qpla3XXRlg" name="okrCycleInput.team_uebergreifendes_alignement" content="okrCycleInput?.team_uebergreifendes_alignement" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6s86xaMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_6s86xqMtEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setTeam_uebergreifendes_alignement">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ad4-aqMuEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ad4-a6MuEe-8Qpla3XXRlg" name="tabelleTeam2" content="tabelleTeam2" type="TYPE_VARIABLE" returnType="com.company.model.TabelleTeam2">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ad4-bKMuEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ad4-baMuEe-8Qpla3XXRlg" name="tabelleTeam2Input.okr_1_input" content="tabelleTeam2Input?.okr_1_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ad4-bqMuEe-8Qpla3XXRlg" name="tabelleTeam2Input" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ad4-b6MuEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ad4-cKMuEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ad4-caMuEe-8Qpla3XXRlg" name="tabelleTeam2" content="tabelleTeam2" type="TYPE_VARIABLE" returnType="com.company.model.TabelleTeam2">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ad4-cqMuEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ad4-c6MuEe-8Qpla3XXRlg" name="tabelleTeam2Input.okr_1_output" content="tabelleTeam2Input?.okr_1_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ad4-dKMuEe-8Qpla3XXRlg" name="tabelleTeam2Input" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ad4-daMuEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ad4-dqMuEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ad4-d6MuEe-8Qpla3XXRlg" name="tabelleTeam2" content="tabelleTeam2" type="TYPE_VARIABLE" returnType="com.company.model.TabelleTeam2">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ad4-eKMuEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ad4-eaMuEe-8Qpla3XXRlg" name="tabelleTeam2Input.okr_1_outcome" content="tabelleTeam2Input?.okr_1_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ad4-eqMuEe-8Qpla3XXRlg" name="tabelleTeam2Input" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ad4-e6MuEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ad4-fKMuEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ad4-faMuEe-8Qpla3XXRlg" name="tabelleTeam2" content="tabelleTeam2" type="TYPE_VARIABLE" returnType="com.company.model.TabelleTeam2">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ad4-fqMuEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ad4-f6MuEe-8Qpla3XXRlg" name="tabelleTeam2Input.okr_2_input" content="tabelleTeam2Input?.okr_2_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ad4-gKMuEe-8Qpla3XXRlg" name="tabelleTeam2Input" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ad4-gaMuEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ad4-gqMuEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ad4-g6MuEe-8Qpla3XXRlg" name="tabelleTeam2" content="tabelleTeam2" type="TYPE_VARIABLE" returnType="com.company.model.TabelleTeam2">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ad4-hKMuEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ad4-haMuEe-8Qpla3XXRlg" name="tabelleTeam2Input.okr_2_output" content="tabelleTeam2Input?.okr_2_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ad4-hqMuEe-8Qpla3XXRlg" name="tabelleTeam2Input" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ad4-h6MuEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ad4-iKMuEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ad4-iaMuEe-8Qpla3XXRlg" name="tabelleTeam2" content="tabelleTeam2" type="TYPE_VARIABLE" returnType="com.company.model.TabelleTeam2">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ad4-iqMuEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ad4-i6MuEe-8Qpla3XXRlg" name="tabelleTeam2Input.okr_2_outcome" content="tabelleTeam2Input?.okr_2_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ad4-jKMuEe-8Qpla3XXRlg" name="tabelleTeam2Input" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ad4-jaMuEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ad4-jqMuEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ad4-j6MuEe-8Qpla3XXRlg" name="tabelleTeam2" content="tabelleTeam2" type="TYPE_VARIABLE" returnType="com.company.model.TabelleTeam2">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ad4-kKMuEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ad4-kaMuEe-8Qpla3XXRlg" name="tabelleTeam2Input.okr_3_input" content="tabelleTeam2Input?.okr_3_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ad4-kqMuEe-8Qpla3XXRlg" name="tabelleTeam2Input" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ad4-k6MuEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ad4-lKMuEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ad4-laMuEe-8Qpla3XXRlg" name="tabelleTeam2" content="tabelleTeam2" type="TYPE_VARIABLE" returnType="com.company.model.TabelleTeam2">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ad4-lqMuEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ad4-l6MuEe-8Qpla3XXRlg" name="tabelleTeam2Input.okr_3_output" content="tabelleTeam2Input?.okr_3_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ad4-mKMuEe-8Qpla3XXRlg" name="tabelleTeam2Input" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ad4-maMuEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ad4-mqMuEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ad4-m6MuEe-8Qpla3XXRlg" name="tabelleTeam2" content="tabelleTeam2" type="TYPE_VARIABLE" returnType="com.company.model.TabelleTeam2">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ad4-nKMuEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ad4-naMuEe-8Qpla3XXRlg" name="tabelleTeam2Input.okr_3_outcome" content="tabelleTeam2Input?.okr_3_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ad4-nqMuEe-8Qpla3XXRlg" name="tabelleTeam2Input" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ad4-n6MuEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <loopCondition xmi:type="expression:Expression" xmi:id="_073FpKMtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <loopMaximum xmi:type="expression:Expression" xmi:id="_073FpaMtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_073FpqMtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_073FqKMtEe-8Qpla3XXRlg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_073Fp6MtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <formMapping xmi:type="process:FormMapping" xmi:id="_073FqqMtEe-8Qpla3XXRlg">
+            <targetForm xmi:type="expression:Expression" xmi:id="_Bs_OwKMuEe-8Qpla3XXRlg" name="alignementForm" content="1407ff45-6362-46ca-abc1-ed86399eceb8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          </formMapping>
+          <contract xmi:type="process:Contract" xmi:id="_073FqaMtEe-8Qpla3XXRlg">
+            <inputs xmi:type="process:ContractInput" xmi:id="_6s86gKMtEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" dataReference="okrCycle" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_6s86gaMtEe-8Qpla3XXRlg" name="okr_1_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_6s86gqMtEe-8Qpla3XXRlg" name="okr_1_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_6s86g6MtEe-8Qpla3XXRlg" name="okr_1_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_6s86hKMtEe-8Qpla3XXRlg" name="okr_2_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_6s86haMtEe-8Qpla3XXRlg" name="okr_2_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_6s86hqMtEe-8Qpla3XXRlg" name="okr_2_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_6s86h6MtEe-8Qpla3XXRlg" name="okr_3_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_6s86iKMtEe-8Qpla3XXRlg" name="okr_3_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_6s86iaMtEe-8Qpla3XXRlg" name="okr_3_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_6s86iqMtEe-8Qpla3XXRlg" name="team_uebergreifendes_alignement" createMode="false"/>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_Ad4-YKMuEe-8Qpla3XXRlg" name="tabelleTeam2Input" type="COMPLEX" dataReference="tabelleTeam2" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ad4-YaMuEe-8Qpla3XXRlg" name="okr_1_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ad4-YqMuEe-8Qpla3XXRlg" name="okr_1_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ad4-Y6MuEe-8Qpla3XXRlg" name="okr_1_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ad4-ZKMuEe-8Qpla3XXRlg" name="okr_2_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ad4-ZaMuEe-8Qpla3XXRlg" name="okr_2_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ad4-ZqMuEe-8Qpla3XXRlg" name="okr_2_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ad4-Z6MuEe-8Qpla3XXRlg" name="okr_3_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ad4-aKMuEe-8Qpla3XXRlg" name="okr_3_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ad4-aaMuEe-8Qpla3XXRlg" name="okr_3_outcome" createMode="false"/>
+            </inputs>
+          </contract>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_073FrKMtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:Task" xmi:id="_GN0gMKMvEe-8Qpla3XXRlg" name="Challenge Resultate eintragen" outgoing="_nvZZcKMvEe-8Qpla3XXRlg" incoming="_HulvYKMvEe-8Qpla3XXRlg" overrideActorsOfTheLane="false">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_GN0gMqMvEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_GN0gMaMvEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_GN0gM6MvEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1PaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1PqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1P6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1QKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_input" content="okrCycleInput?.okr_1_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1QaMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1QqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1Q6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1RKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1RaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1RqMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_output" content="okrCycleInput?.okr_1_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1R6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1SKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1SaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1SqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1S6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1TKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_outcome" content="okrCycleInput?.okr_1_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1TaMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1TqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1T6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1UKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1UaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1UqMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_input" content="okrCycleInput?.okr_2_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1U6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1VKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1VaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1VqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1V6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1WKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_output" content="okrCycleInput?.okr_2_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1WaMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1WqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1W6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1XKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1XaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1XqMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_outcome" content="okrCycleInput?.okr_2_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1X6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1YKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1YaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1YqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1Y6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1ZKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_input" content="okrCycleInput?.okr_3_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1ZaMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1ZqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1Z6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1aKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1aaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1aqMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_output" content="okrCycleInput?.okr_3_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1a6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1bKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1baMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1bqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1b6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1cKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_outcome" content="okrCycleInput?.okr_3_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1caMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1cqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1c6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1dKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1daMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1dqMvEe-8Qpla3XXRlg" name="okrCycleInput.team_uebergreifendes_alignement" content="okrCycleInput?.team_uebergreifendes_alignement" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1d6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1eKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setTeam_uebergreifendes_alignement">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1eaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1eqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1e6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1fKMvEe-8Qpla3XXRlg" name="okrCycleInput.challenge_akzeptiert" content="okrCycleInput?.challenge_akzeptiert" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1faMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1fqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setChallenge_akzeptiert">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_SNL1f6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SNL1gKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SNL1gaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SNL1gqMvEe-8Qpla3XXRlg" name="okrCycleInput.challenge_rueckmeldung" content="okrCycleInput?.challenge_rueckmeldung" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SNL1g6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_SNL1hKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setChallenge_rueckmeldung">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <loopCondition xmi:type="expression:Expression" xmi:id="_GN0gNKMvEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <loopMaximum xmi:type="expression:Expression" xmi:id="_GN0gNaMvEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_GN0gNqMvEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_GN0gOKMvEe-8Qpla3XXRlg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_GN0gN6MvEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <formMapping xmi:type="process:FormMapping" xmi:id="_GN0gOqMvEe-8Qpla3XXRlg">
+            <targetForm xmi:type="expression:Expression" xmi:id="_TE1O4KMvEe-8Qpla3XXRlg" name="challengeForm" content="d399030f-84c4-4a15-b9a0-d84fb41caa8c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          </formMapping>
+          <contract xmi:type="process:Contract" xmi:id="_GN0gOaMvEe-8Qpla3XXRlg">
+            <inputs xmi:type="process:ContractInput" xmi:id="_SNL1MKMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" dataReference="okrCycle" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1MaMvEe-8Qpla3XXRlg" name="okr_1_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1MqMvEe-8Qpla3XXRlg" name="okr_1_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1M6MvEe-8Qpla3XXRlg" name="okr_1_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1NKMvEe-8Qpla3XXRlg" name="okr_2_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1NaMvEe-8Qpla3XXRlg" name="okr_2_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1NqMvEe-8Qpla3XXRlg" name="okr_2_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1N6MvEe-8Qpla3XXRlg" name="okr_3_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1OKMvEe-8Qpla3XXRlg" name="okr_3_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1OaMvEe-8Qpla3XXRlg" name="okr_3_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1OqMvEe-8Qpla3XXRlg" name="team_uebergreifendes_alignement" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1O6MvEe-8Qpla3XXRlg" name="challenge_akzeptiert" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_SNL1PKMvEe-8Qpla3XXRlg" name="challenge_rueckmeldung" createMode="false"/>
+            </inputs>
+          </contract>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_GN0gPKMvEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:Task" xmi:id="_msbgkKMvEe-8Qpla3XXRlg" name="OKRs aufteilen" outgoing="_oe3ukKMvEe-8Qpla3XXRlg" incoming="_nvZZcKMvEe-8Qpla3XXRlg" overrideActorsOfTheLane="false">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_msbgkqMvEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_msbgkaMvEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_msbgk6MvEe-8Qpla3XXRlg" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oebaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oebqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oeb6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oecKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_input" content="okrCycleInput?.okr_1_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oecaMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oecqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oec6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oedKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oedaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oedqMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_output" content="okrCycleInput?.okr_1_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oed6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oeeKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oeeaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oeeqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oee6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oefKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_outcome" content="okrCycleInput?.okr_1_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oefaMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oefqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oef6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oegKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oegaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oegqMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_input" content="okrCycleInput?.okr_2_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oeg6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oehKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oehaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oehqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oeh6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oeiKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_output" content="okrCycleInput?.okr_2_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oeiaMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oeiqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oei6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oejKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oejaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oejqMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_outcome" content="okrCycleInput?.okr_2_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oej6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oekKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oekaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oekqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oek6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oelKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_input" content="okrCycleInput?.okr_3_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oelaMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oelqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_input">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oel6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oemKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oemaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oemqMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_output" content="okrCycleInput?.okr_3_output" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oem6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oenKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_output">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oenaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oenqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oen6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oeoKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_outcome" content="okrCycleInput?.okr_3_outcome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oeoaMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oeoqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_outcome">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oeo6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oepKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oepaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oepqMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_1_zustaendige" content="okrCycleInput?.okr_1_zustaendige" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oep6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oeqKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_1_zustaendige">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oeqaMvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oeqqMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oeq6MvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oerKMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_2_zustaendige" content="okrCycleInput?.okr_2_zustaendige" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oeraMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oerqMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_2_zustaendige">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_x6oer6MvEe-8Qpla3XXRlg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_x6oesKMvEe-8Qpla3XXRlg" name="okrCycle" content="okrCycle" type="TYPE_VARIABLE" returnType="com.company.model.OKRCycle">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x6oesaMvEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_x6oesqMvEe-8Qpla3XXRlg" name="okrCycleInput.okr_3_zustaendige" content="okrCycleInput?.okr_3_zustaendige" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_x6oes6MvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_x6oetKMvEe-8Qpla3XXRlg" type="JAVA_METHOD" expression="setOkr_3_zustaendige">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <loopCondition xmi:type="expression:Expression" xmi:id="_msbglKMvEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <loopMaximum xmi:type="expression:Expression" xmi:id="_msbglaMvEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_msbglqMvEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_msbgmKMvEe-8Qpla3XXRlg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_msbgl6MvEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <formMapping xmi:type="process:FormMapping" xmi:id="_msbgmqMvEe-8Qpla3XXRlg">
+            <targetForm xmi:type="expression:Expression" xmi:id="_y-S60KMvEe-8Qpla3XXRlg" name="aufteilungForm" content="98ce025b-74c6-4f7e-802f-2b3dcd97ddb2" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          </formMapping>
+          <contract xmi:type="process:Contract" xmi:id="_msbgmaMvEe-8Qpla3XXRlg">
+            <inputs xmi:type="process:ContractInput" xmi:id="_x6oeYKMvEe-8Qpla3XXRlg" name="okrCycleInput" type="COMPLEX" dataReference="okrCycle" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oeYaMvEe-8Qpla3XXRlg" name="okr_1_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oeYqMvEe-8Qpla3XXRlg" name="okr_1_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oeY6MvEe-8Qpla3XXRlg" name="okr_1_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oeZKMvEe-8Qpla3XXRlg" name="okr_2_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oeZaMvEe-8Qpla3XXRlg" name="okr_2_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oeZqMvEe-8Qpla3XXRlg" name="okr_2_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oeZ6MvEe-8Qpla3XXRlg" name="okr_3_input" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oeaKMvEe-8Qpla3XXRlg" name="okr_3_output" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oeaaMvEe-8Qpla3XXRlg" name="okr_3_outcome" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oeaqMvEe-8Qpla3XXRlg" name="okr_1_zustaendige" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oea6MvEe-8Qpla3XXRlg" name="okr_2_zustaendige" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_x6oebKMvEe-8Qpla3XXRlg" name="okr_3_zustaendige" createMode="false"/>
+            </inputs>
+          </contract>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_msbgnKMvEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
+        </elements>
+      </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_VNzkAKMjEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_VNzkAaMjEe-8Qpla3XXRlg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_Qc4O0KMnEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_Qc4O0aMnEe-8Qpla3XXRlg" name="init_tabelleTeam2()" content="return new com.company.model.TabelleTeam2(okr_1_input:&quot;40h Woche&quot;, okr_1_output:&quot;Mehr Freizeit und bessere Work-Life Balance&quot;, okr_1_outcome:&quot;Mehr Engagement und Energie beim Arbeiten&quot;, okr_2_input:&quot;Regelmässiger Austausch mit fachfremden Teams&quot;, okr_2_output:&quot;Wissensaustausch&quot;, okr_2_outcome:&quot;Besseres Verständnis von Lufthands&quot;, okr_3_input:&quot;Geburtstagskuchen&quot;, okr_3_output:&quot;Kuchen essen&quot;, okr_3_outcome:&quot;Happy&quot;)&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.TabelleTeam2"/>
+      </data>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_u2NVZKHVEe-DVtPZkrI92A">
+        <targetForm xmi:type="expression:Expression" xmi:id="_gTdN0KHmEe-kwcC__k1zcw" name="startProcess" content="1f3199eb-c9b4-4405-8de8-cbab57be916c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      </formMapping>
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_u2NVZqHVEe-DVtPZkrI92A">
+        <targetForm xmi:type="expression:Expression" xmi:id="_u2NVZ6HVEe-DVtPZkrI92A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      </overviewFormMapping>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_YDneEKMkEe-8Qpla3XXRlg" target="_yt7dMKMnEe-8Qpla3XXRlg" source="_bcpFUKHlEe-kwcC__k1zcw">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_YDneEaMkEe-8Qpla3XXRlg"/>
+        <condition xmi:type="expression:Expression" xmi:id="_YDneEqMkEe-8Qpla3XXRlg" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_YzH2IKMpEe-8Qpla3XXRlg" name="Nein" target="_yt7dMKMnEe-8Qpla3XXRlg" source="_T-ELsKMpEe-8Qpla3XXRlg">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_YzH2IaMpEe-8Qpla3XXRlg"/>
+        <condition xmi:type="expression:Expression" xmi:id="_YzH2IqMpEe-8Qpla3XXRlg" name="newScript()" content="!tabelleTeam2.okr_1_input || !okrCycle.okr_1_input" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9NhWoKMpEe-8Qpla3XXRlg" name="tabelleTeam2" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.TabelleTeam2"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9NhWoaMpEe-8Qpla3XXRlg" name="okrCycle" dataType="_u2NVhKHVEe-DVtPZkrI92A" className="com.company.model.OKRCycle"/>
+        </condition>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_hjydsKMtEe-8Qpla3XXRlg" target="_iYOLUKMtEe-8Qpla3XXRlg" source="_yt7dMKMnEe-8Qpla3XXRlg">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_hjydsaMtEe-8Qpla3XXRlg"/>
+        <condition xmi:type="expression:Expression" xmi:id="_hjydsqMtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_h0t1oKMtEe-8Qpla3XXRlg" target="_T-ELsKMpEe-8Qpla3XXRlg" source="_iYOLUKMtEe-8Qpla3XXRlg">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_h0t1oaMtEe-8Qpla3XXRlg"/>
+        <condition xmi:type="expression:Expression" xmi:id="_h0t1oqMtEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_MuX4kKMuEe-8Qpla3XXRlg" target="_073FoKMtEe-8Qpla3XXRlg" source="_T-ELsKMpEe-8Qpla3XXRlg" isDefault="true">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_MuX4kaMuEe-8Qpla3XXRlg"/>
+        <condition xmi:type="expression:Expression" xmi:id="_MuX4kqMuEe-8Qpla3XXRlg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_HulvYKMvEe-8Qpla3XXRlg" target="_GN0gMKMvEe-8Qpla3XXRlg" source="_073FoKMtEe-8Qpla3XXRlg">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_HulvYaMvEe-8Qpla3XXRlg"/>
+        <condition xmi:type="expression:Expression" xmi:id="_HulvYqMvEe-8Qpla3XXRlg" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_nvZZcKMvEe-8Qpla3XXRlg" target="_msbgkKMvEe-8Qpla3XXRlg" source="_GN0gMKMvEe-8Qpla3XXRlg">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_nvZZcaMvEe-8Qpla3XXRlg"/>
+        <condition xmi:type="expression:Expression" xmi:id="_nvZZcqMvEe-8Qpla3XXRlg" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_oe3ukKMvEe-8Qpla3XXRlg" target="_NW9rcKHiEe-kwcC__k1zcw" source="_msbgkKMvEe-8Qpla3XXRlg">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_oe3ukaMvEe-8Qpla3XXRlg"/>
+        <condition xmi:type="expression:Expression" xmi:id="_oe3ukqMvEe-8Qpla3XXRlg" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <actors xmi:type="process:Actor" xmi:id="_79MjQKHhEe-kwcC__k1zcw" name="OKR-Manager" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_-f5wkKHhEe-kwcC__k1zcw" name="Team-Member"/>
+      <contract xmi:type="process:Contract" xmi:id="_u2NVbKHVEe-DVtPZkrI92A"/>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_u2NVbaHVEe-DVtPZkrI92A">
+        <name xmi:type="expression:Expression" xmi:id="_u2NVbqHVEe-DVtPZkrI92A" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_u2NVb6HVEe-DVtPZkrI92A" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_u2NVcKHVEe-DVtPZkrI92A">
+        <name xmi:type="expression:Expression" xmi:id="_u2NVcaHVEe-DVtPZkrI92A" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_u2NVcqHVEe-DVtPZkrI92A" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_u2NVc6HVEe-DVtPZkrI92A">
+        <name xmi:type="expression:Expression" xmi:id="_u2NVdKHVEe-DVtPZkrI92A" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_u2NVdaHVEe-DVtPZkrI92A" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_u2NVdqHVEe-DVtPZkrI92A">
+        <name xmi:type="expression:Expression" xmi:id="_u2NVd6HVEe-DVtPZkrI92A" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_u2NVeKHVEe-DVtPZkrI92A" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_u2NVeaHVEe-DVtPZkrI92A">
+        <name xmi:type="expression:Expression" xmi:id="_u2NVeqHVEe-DVtPZkrI92A" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_u2NVe6HVEe-DVtPZkrI92A" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+    </elements>
+    <datatypes xmi:type="process:BooleanType" xmi:id="_u2NVfKHVEe-DVtPZkrI92A" name="Boolean"/>
+    <datatypes xmi:type="process:DateType" xmi:id="_u2NVfaHVEe-DVtPZkrI92A" name="Date"/>
+    <datatypes xmi:type="process:IntegerType" xmi:id="_u2NVfqHVEe-DVtPZkrI92A" name="Integer"/>
+    <datatypes xmi:type="process:LongType" xmi:id="_u2NVf6HVEe-DVtPZkrI92A" name="Long"/>
+    <datatypes xmi:type="process:DoubleType" xmi:id="_u2NVgKHVEe-DVtPZkrI92A" name="Double"/>
+    <datatypes xmi:type="process:StringType" xmi:id="_u2NVgaHVEe-DVtPZkrI92A" name="Text"/>
+    <datatypes xmi:type="process:JavaType" xmi:id="_u2NVgqHVEe-DVtPZkrI92A" name="Java_object"/>
+    <datatypes xmi:type="process:XMLType" xmi:id="_u2NVg6HVEe-DVtPZkrI92A" name="XML"/>
+    <datatypes xmi:type="process:BusinessObjectType" xmi:id="_u2NVhKHVEe-DVtPZkrI92A" name="Business_Object"/>
+  </process:MainProcess>
+  <notation:Diagram xmi:id="_u2NVhaHVEe-DVtPZkrI92A" type="Process" element="_u2NVUKHVEe-DVtPZkrI92A" name="MyDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_u2NVhqHVEe-DVtPZkrI92A" type="2007" element="_u2NVUaHVEe-DVtPZkrI92A">
+      <children xmi:type="notation:DecorationNode" xmi:id="_u2NVh6HVEe-DVtPZkrI92A" type="5008"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_u2NViKHVEe-DVtPZkrI92A" type="7001">
+        <children xmi:type="notation:Node" xmi:id="_u2NViaHVEe-DVtPZkrI92A" type="3007" element="_u2NVUqHVEe-DVtPZkrI92A">
+          <children xmi:type="notation:DecorationNode" xmi:id="_u2NViqHVEe-DVtPZkrI92A" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_u2NVi6HVEe-DVtPZkrI92A" type="7002">
+            <children xmi:type="notation:Shape" xmi:id="_bcpFVKHlEe-kwcC__k1zcw" type="3002" element="_bcpFUKHlEe-kwcC__k1zcw" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_bcpFVqHlEe-kwcC__k1zcw" type="5024">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_bcpFV6HlEe-kwcC__k1zcw" y="5"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bcpFVaHlEe-kwcC__k1zcw" x="53" y="91"/>
+            </children>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_u2NVk6HVEe-DVtPZkrI92A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_u2NVlKHVEe-DVtPZkrI92A" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_u2NVlaHVEe-DVtPZkrI92A"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_u2NVlqHVEe-DVtPZkrI92A"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u2NVl6HVEe-DVtPZkrI92A" x="48" y="10" width="777" height="200"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_h_8-IKHhEe-kwcC__k1zcw" type="3007" element="_h_5TwKHhEe-kwcC__k1zcw">
+          <children xmi:type="notation:DecorationNode" xmi:id="_h_8-JaHhEe-kwcC__k1zcw" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_h_8-JqHhEe-kwcC__k1zcw" type="7002">
+            <children xmi:type="notation:Shape" xmi:id="_NW9rdKHiEe-kwcC__k1zcw" type="3003" element="_NW9rcKHiEe-kwcC__k1zcw" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_NXHccKHiEe-kwcC__k1zcw" type="5025">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NXHccaHiEe-kwcC__k1zcw" y="5"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NW9rdaHiEe-kwcC__k1zcw" x="848" y="60"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_yt7dNKMnEe-8Qpla3XXRlg" type="3008" element="_yt7dMKMnEe-8Qpla3XXRlg" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_yt7dNqMnEe-8Qpla3XXRlg" type="5026">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_yt7dN6MnEe-8Qpla3XXRlg" y="5"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yt7dNaMnEe-8Qpla3XXRlg" x="134" y="145"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_T-ELtKMpEe-8Qpla3XXRlg" type="3008" element="_T-ELsKMpEe-8Qpla3XXRlg" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_T-ELtqMpEe-8Qpla3XXRlg" type="5026">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_T-ELt6MpEe-8Qpla3XXRlg" y="5"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T-ELtaMpEe-8Qpla3XXRlg" x="267" y="34" width="42" height="42"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_iYOLXaMtEe-8Qpla3XXRlg" type="3005" element="_iYOLUKMtEe-8Qpla3XXRlg" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_iYOLX6MtEe-8Qpla3XXRlg" type="5005"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iYOLXqMtEe-8Qpla3XXRlg" x="105" y="30" width="100" height="49"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_073FraMtEe-8Qpla3XXRlg" type="3005" element="_073FoKMtEe-8Qpla3XXRlg" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_073Fr6MtEe-8Qpla3XXRlg" type="5005"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_073FrqMtEe-8Qpla3XXRlg" x="439" y="31" width="139" height="69"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_GN0gPaMvEe-8Qpla3XXRlg" type="3005" element="_GN0gMKMvEe-8Qpla3XXRlg" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_GN0gP6MvEe-8Qpla3XXRlg" type="5005"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GN0gPqMvEe-8Qpla3XXRlg" x="627" y="36" width="119" height="59"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_msbgnaMvEe-8Qpla3XXRlg" type="3005" element="_msbgkKMvEe-8Qpla3XXRlg" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_msbgn6MvEe-8Qpla3XXRlg" type="5005"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_msbgnqMvEe-8Qpla3XXRlg" x="766" y="140"/>
+            </children>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_h_8-IaHhEe-kwcC__k1zcw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_h_8-IqHhEe-kwcC__k1zcw" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_h_8-I6HhEe-kwcC__k1zcw"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_h_8-J6HhEe-kwcC__k1zcw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h_8-JKHhEe-kwcC__k1zcw" x="48" y="420" width="863" height="247"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cky8gaMfEe-8Qpla3XXRlg" type="3007" element="_cky8gKMfEe-8Qpla3XXRlg">
+          <children xmi:type="notation:DecorationNode" xmi:id="_cky8hqMfEe-8Qpla3XXRlg" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_cky8h6MfEe-8Qpla3XXRlg" type="7002"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_cky8gqMfEe-8Qpla3XXRlg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cky8g6MfEe-8Qpla3XXRlg" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_cky8hKMfEe-8Qpla3XXRlg"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_cky8iKMfEe-8Qpla3XXRlg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cky8haMfEe-8Qpla3XXRlg" x="48" y="200" width="777" height="220"/>
+        </children>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_u2NVmKHVEe-DVtPZkrI92A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_u2NVmaHVEe-DVtPZkrI92A" fontName="Segoe UI"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_u2NVmqHVEe-DVtPZkrI92A"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_u2NVm6HVEe-DVtPZkrI92A"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u2NVnKHVEe-DVtPZkrI92A" width="1023" height="250"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_u2NVnaHVEe-DVtPZkrI92A"/>
+    <edges xmi:type="notation:Connector" xmi:id="_YDneE6MkEe-8Qpla3XXRlg" type="4001" element="_YDneEKMkEe-8Qpla3XXRlg" source="_bcpFVKHlEe-kwcC__k1zcw" target="_yt7dNKMnEe-8Qpla3XXRlg" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YDneFqMkEe-8Qpla3XXRlg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YDneF6MkEe-8Qpla3XXRlg" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_YDneFKMkEe-8Qpla3XXRlg" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YDneFaMkEe-8Qpla3XXRlg" points="[2, 14, -85, -466]$[2, 480, -85, 0]$[66, 480, -21, 0]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_YzRnIKMpEe-8Qpla3XXRlg" type="4001" element="_YzH2IKMpEe-8Qpla3XXRlg" source="_T-ELtKMpEe-8Qpla3XXRlg" target="_yt7dNKMnEe-8Qpla3XXRlg" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YzRnI6MpEe-8Qpla3XXRlg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YzRnJKMpEe-8Qpla3XXRlg" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_YzRnIaMpEe-8Qpla3XXRlg" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YzRnIqMpEe-8Qpla3XXRlg" points="[-27, 21, 148, -117]$[-172, 138, 3, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YzRnJaMpEe-8Qpla3XXRlg" id="(1.0,0.6046511627906976)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YzRnJqMpEe-8Qpla3XXRlg" id="(0.8372093023255814,0.5813953488372093)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_hjyds6MtEe-8Qpla3XXRlg" type="4001" element="_hjydsKMtEe-8Qpla3XXRlg" source="_yt7dNKMnEe-8Qpla3XXRlg" target="_iYOLXaMtEe-8Qpla3XXRlg" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_hjydtqMtEe-8Qpla3XXRlg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hjydt6MtEe-8Qpla3XXRlg" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_hjydtKMtEe-8Qpla3XXRlg" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hjydtaMtEe-8Qpla3XXRlg" points="[-1, -4, 21, 114]$[-21, -110, 1, 8]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hjyduKMtEe-8Qpla3XXRlg" id="(1.0,0.5581395348837209)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hjyduaMtEe-8Qpla3XXRlg" id="(0.53,0.86)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_h0t1o6MtEe-8Qpla3XXRlg" type="4001" element="_h0t1oKMtEe-8Qpla3XXRlg" source="_iYOLXaMtEe-8Qpla3XXRlg" target="_T-ELtKMpEe-8Qpla3XXRlg" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_h0t1pqMtEe-8Qpla3XXRlg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_h0t1p6MtEe-8Qpla3XXRlg" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_h0t1pKMtEe-8Qpla3XXRlg" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_h0t1paMtEe-8Qpla3XXRlg" points="[0, -1, -85, 1]$[86, -8, 1, -6]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h0t1qKMtEe-8Qpla3XXRlg" id="(1.0,0.46)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h0t1qaMtEe-8Qpla3XXRlg" id="(0.16279069767441862,0.4418604651162791)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_MuX4k6MuEe-8Qpla3XXRlg" type="4001" element="_MuX4kKMuEe-8Qpla3XXRlg" source="_T-ELtKMpEe-8Qpla3XXRlg" target="_073FraMtEe-8Qpla3XXRlg" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_MuX4lqMuEe-8Qpla3XXRlg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_MuX4l6MuEe-8Qpla3XXRlg" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_MuX4lKMuEe-8Qpla3XXRlg" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MuX4laMuEe-8Qpla3XXRlg" points="[-6, 0, -266, -21]$[261, -21, 1, -42]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MuX4mKMuEe-8Qpla3XXRlg" id="(1.0,0.6046511627906976)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MuX4maMuEe-8Qpla3XXRlg" id="(0.10071942446043165,0.4927536231884058)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_HulvY6MvEe-8Qpla3XXRlg" type="4001" element="_HulvYKMvEe-8Qpla3XXRlg" source="_073FraMtEe-8Qpla3XXRlg" target="_GN0gPaMvEe-8Qpla3XXRlg" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_HulvZqMvEe-8Qpla3XXRlg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HulvZ6MvEe-8Qpla3XXRlg" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_HulvZKMvEe-8Qpla3XXRlg" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HulvZaMvEe-8Qpla3XXRlg" points="[0, 0, -163, -110]$[164, 146, 1, 36]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HulvaKMvEe-8Qpla3XXRlg" id="(1.0,0.3333333333333333)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HulvaaMvEe-8Qpla3XXRlg" id="(0.13445378151260504,0.5084745762711864)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_nvZZc6MvEe-8Qpla3XXRlg" type="4001" element="_nvZZcKMvEe-8Qpla3XXRlg" source="_GN0gPaMvEe-8Qpla3XXRlg" target="_msbgnaMvEe-8Qpla3XXRlg" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_nvZZdqMvEe-8Qpla3XXRlg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_nvZZd6MvEe-8Qpla3XXRlg" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_nvZZdKMvEe-8Qpla3XXRlg" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nvZZdaMvEe-8Qpla3XXRlg" points="[0, 0, -37, -144]$[37, 162, 0, 18]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nvZZeKMvEe-8Qpla3XXRlg" id="(1.0,0.423728813559322)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nvZZeaMvEe-8Qpla3XXRlg" id="(0.09,0.72)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_oe3uk6MvEe-8Qpla3XXRlg" type="4001" element="_oe3ukKMvEe-8Qpla3XXRlg" source="_msbgnaMvEe-8Qpla3XXRlg" target="_NW9rdKHiEe-kwcC__k1zcw" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_oe3ulqMvEe-8Qpla3XXRlg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oe3ul6MvEe-8Qpla3XXRlg" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_oe3ulKMvEe-8Qpla3XXRlg" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oe3ulaMvEe-8Qpla3XXRlg" points="[-4, -33, -1, 81]$[-4, -97, -1, 17]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oe3umKMvEe-8Qpla3XXRlg" id="(1.0,0.52)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
