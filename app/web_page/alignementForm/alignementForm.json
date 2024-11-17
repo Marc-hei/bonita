@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "1407ff45-6362-46ca-abc1-ed86399eceb8",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1731827477487,
+  "lastUpdate" : 1731827857566,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -1995,7 +1995,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Abschicken"
+                    "value" : "Aufgabe beenden"
                   },
                   "dataToSend" : {
                     "type" : "expression",

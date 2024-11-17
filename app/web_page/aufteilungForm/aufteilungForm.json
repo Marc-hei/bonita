@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "98ce025b-74c6-4f7e-802f-2b3dcd97ddb2",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1731661246171,
+  "lastUpdate" : 1731827848678,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -237,7 +237,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_input"
+                          "value" : "Input OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -325,7 +325,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_output"
+                          "value" : "Output OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -413,7 +413,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_outcome"
+                          "value" : "Outcome OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -509,7 +509,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_zustaendige"
+                          "value" : "Zuständige OKR 1"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -586,7 +586,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_input"
+                          "value" : "Input OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -674,7 +674,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_output"
+                          "value" : "Output OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -762,7 +762,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_outcome"
+                          "value" : "Outcome OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -850,7 +850,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_zustaendige"
+                          "value" : "Zuständige OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -940,7 +940,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_input"
+                          "value" : "Input OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1028,7 +1028,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_output"
+                          "value" : "Output OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1116,7 +1116,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_outcome"
+                          "value" : "Outcome OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1204,7 +1204,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_zustaendige"
+                          "value" : "Zuständige OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1288,7 +1288,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Aufgabe beenden"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1334,6 +1334,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "0a2e7498-7521-4fbb-939d-5a2b332ea1c9",
