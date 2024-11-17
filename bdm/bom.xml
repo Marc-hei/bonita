@@ -29,16 +29,15 @@
                 <field type="STRING" length="255" name="okr_3_updates" nullable="true" collection="false"/>
                 <field type="FLOAT" length="255" name="okr_3_erfuellungsgrad" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="okr_3_entscheidung" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="okr_1_score" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="okr_1_bewertung" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="okr_2_score" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="okr_2_bewertung" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="okr_3_score" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="okr_3_bewertung" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="okr_erfuellungsgrad_durchschnitt" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="teamwork_bewertung" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="prozessetup_bewertung" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="cycle_bewertung" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="naechster_cycle" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="anzahl_check_ins" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
