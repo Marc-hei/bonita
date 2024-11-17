@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "236fe8cc-ac6d-4ddb-8cbb-14bb2ce9f904",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1731841446638,
+  "lastUpdate" : 1731873292248,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -295,7 +295,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Unternehmensziele an alle OKR-Manager versenden"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -341,6 +341,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "bd963c7d-bf46-4270-a6b3-11fbd60ee0f6",

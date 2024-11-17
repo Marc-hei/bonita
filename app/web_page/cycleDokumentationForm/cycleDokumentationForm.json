@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2fcae848-071f-4b23-9b19-41b93ec0c817",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1731833332195,
+  "lastUpdate" : 1731873758179,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -237,7 +237,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_input"
+                          "value" : "Input OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -325,7 +325,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_input"
+                          "value" : "Input OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -413,7 +413,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_input"
+                          "value" : "Input OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -503,7 +503,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_output"
+                          "value" : "Output OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -591,7 +591,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_output"
+                          "value" : "Output OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -679,7 +679,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_output"
+                          "value" : "Output OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -769,7 +769,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_outcome"
+                          "value" : "Outcome OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -857,7 +857,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_outcome"
+                          "value" : "Outcome OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -945,7 +945,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_outcome"
+                          "value" : "Outcome OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1035,7 +1035,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_erfuellungsgrad"
+                          "value" : "Erfüllungsgrad OKR 1 (0-1)"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1123,7 +1123,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_erfuellungsgrad"
+                          "value" : "Erfüllungsgrad OKR 2 (0-1)"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1211,7 +1211,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_erfuellungsgrad"
+                          "value" : "Erfüllungsgrad OKR 3 (0-1)"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1567,7 +1567,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_erfuellungsgrad_durchschnitt"
+                          "value" : "Durchschnittlicher Erfüllungsgrad"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1657,7 +1657,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_bewertung"
+                          "value" : "Bewertung OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1677,6 +1677,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "02288565-b39a-464e-9376-854674992abc",
@@ -1719,7 +1745,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_bewertung"
+                          "value" : "Bewertung OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1807,7 +1833,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_bewertung"
+                          "value" : "Bewertung OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1897,7 +1923,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Teamwork_bewertung"
+                          "value" : "Bewertung des Teamworks"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1917,6 +1943,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "b79d882b-bf9b-4448-91f4-bcc8f3dafd12",
@@ -1961,7 +2013,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Prozessetup_bewertung"
+                          "value" : "Bewertung des Prozessetups"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1981,6 +2033,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "1a3bc461-3763-4823-ad2a-452a317a7af5",
@@ -2025,7 +2103,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Cycle_bewertung"
+                          "value" : "Bewertung des Cycles"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -2045,6 +2123,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "ec092a3e-19ec-4d99-96ab-dbec4b1b1cf5",
