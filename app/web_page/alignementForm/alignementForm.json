@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "1407ff45-6362-46ca-abc1-ed86399eceb8",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1731660535696,
+  "lastUpdate" : 1731827477487,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -237,7 +237,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_input"
+                          "value" : "Input OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -325,7 +325,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_output"
+                          "value" : "Output OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -413,7 +413,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_outcome"
+                          "value" : "Outcome OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -433,6 +433,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "4f906bf9-bf7b-42ef-9c0c-88a482e3bb37",
@@ -477,7 +503,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_input"
+                          "value" : "Input OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -565,7 +591,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_output"
+                          "value" : "Output OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -653,7 +679,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_outcome"
+                          "value" : "Outcome OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -673,6 +699,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "b5b5ff4c-82b8-4087-82dc-ceb2a3236045",
@@ -717,7 +769,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_input"
+                          "value" : "Input OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -805,7 +857,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_output"
+                          "value" : "Output OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -893,7 +945,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_outcome"
+                          "value" : "Outcome OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -913,6 +965,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "0af6b245-1dc8-454a-b2cc-639741db0a9e",
@@ -957,7 +1035,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Team_uebergreifendes_alignement"
+                          "value" : "Team-übergreifendes Alignement"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -977,6 +1055,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "522c8641-eb72-48e8-bf40-ecedb77a175d",
@@ -1012,7 +1116,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Tabelle Team2"
+                    "value" : "OKR-Tabelle von Team 2"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1021,6 +1125,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "8bcc32c6-b698-4003-b517-eb468a487892",
@@ -1091,11 +1199,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_input"
+                          "value" : "Input OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1179,11 +1287,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_output"
+                          "value" : "Output OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1267,11 +1375,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_outcome"
+                          "value" : "Outcome OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1291,6 +1399,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "9a704aa3-93ea-4cd7-a582-45226ca954a3",
@@ -1331,11 +1465,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_input"
+                          "value" : "Input OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1419,11 +1553,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_output"
+                          "value" : "Output OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1507,11 +1641,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_outcome"
+                          "value" : "Outcome OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1531,6 +1665,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "578a916e-d645-4d01-8606-a4dbb749b2de",
@@ -1571,11 +1731,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_input"
+                          "value" : "Input OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1659,11 +1819,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_output"
+                          "value" : "Output OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1747,11 +1907,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_outcome"
+                          "value" : "Outcome OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1771,6 +1931,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "d76b2c40-474b-4b54-898d-c374679e5b9f",
@@ -1809,7 +1995,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Abschicken"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1855,6 +2041,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "1b335d23-a71b-4cc1-b412-585a1f3e8c19",
