@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "afe55e71-1965-45ec-b882-bdb8c50fa7e8",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1731841566130,
+  "lastUpdate" : 1731949323455,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Okr Cycle"
+                    "value" : "Ein neuer OKR-Cycle hat gestartet!"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,6 +163,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "a2632a89-0bc7-4d13-a94f-e4a45562da78",
@@ -301,7 +305,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Anzahl_check_ins"
+                          "value" : "Anzahl Check-Ins, die ihr Team durchführen möchte (min. 1, max. 10)"
                         },
                         "placeholder" : {
                           "type" : "constant"
