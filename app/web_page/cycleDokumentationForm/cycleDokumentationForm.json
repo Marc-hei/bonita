@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2fcae848-071f-4b23-9b19-41b93ec0c817",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1731873758179,
+  "lastUpdate" : 1731955721511,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -1301,7 +1301,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_1_entscheidung"
+                          "value" : "Entscheidung OKR 1"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1389,7 +1389,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_2_entscheidung"
+                          "value" : "Entscheidung OKR 2"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1477,7 +1477,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Okr_3_entscheidung"
+                          "value" : "Entscheidung OKR 3"
                         },
                         "placeholder" : {
                           "type" : "constant"
